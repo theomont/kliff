@@ -475,7 +475,7 @@ header, #top-bar {
     /* Services Area */
 
     #service-area .col-md-4 {
-        width: 50%;
+        width: 100%;
         margin-bottom: 20px;
     }
 
@@ -487,9 +487,9 @@ header, #top-bar {
         font-size: 18px;
     }
 
-    #service-area p {
+    /*#service-area p {
         display: none;
-    }
+    }*/
 
     #service-area .container, #service-area  .row {
         padding-bottom: 0;
@@ -599,7 +599,7 @@ header, #top-bar {
     /* Services Area */
 
     #service-area .col-md-4 {
-        width: 50%;
+        width: 100%;
         margin-bottom: 20px;
     }
 
@@ -611,9 +611,9 @@ header, #top-bar {
         font-size: 18px;
     }
 
-    #service-area p {
+    /*#service-area p {
         display: none;
-    }
+    }*/
 
     #service-area .container, #service-area  .row {
         padding-bottom: 0;
