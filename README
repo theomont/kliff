@@ -1,0 +1,3 @@
+When doing maintenance you should make DEBUG=True and after finish it back to False.
+
+Also for unknow reason sometimes the CSS does works and it require menage the path on settings.py too. After debug put evverything back to the original.
