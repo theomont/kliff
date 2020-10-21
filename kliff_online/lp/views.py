@@ -18,5 +18,18 @@ def landingPage(request):
 def thankYou(request):
     return render(request, 'lp/thankyou.html')
 
+def landingPageEN(request): 
+    if request.method == 'POST': # Need to deal with subimited empty form (there is a HTML treatment, but have to deal in backend too)
+        form = LeadForm(request.POST)
+        if form.is_valid() : # Need an error treatment
+            lead = form.save(commit=False)
+            lead.save()
+            return redirect('../thanks/')
+    else:
+        return render(request, 'lp/landingpage-en.html')
+
+def thankYouEN(request):
+    return render(request, 'lp/thankyou-en.html')
+
 
 
