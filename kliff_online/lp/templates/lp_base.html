@@ -46,13 +46,21 @@
                     <img id="logo" src={% static 'img/_Kliff_logo_f7f7f7.png' %} alt="Kliff Digital">
                 </a>
                 <div class="nav navbar-nav navbar-right">
-                    <div id="phone-number-box">
-                        <a href="tel:+55 16 991 708 414" class="phone-number">
-                            <i class="fas fa-phone"></i>
-                            <span>+55 16 991 708 414</span>
-                        </a>
-                    </div>
+                    {% block language %}{% endblock %}
+<!--                     <div id="language-box">                                        -->
+<!--                         <a href="/en" class="language">                            -->
+<!--                             <img src={% static 'img/en_icon.png' %} alt="English"> -->
+<!--                         </a>                                                       -->
+                        
+<!--                    </div>                                                      -->
+<!--                    <div id="phone-number-box">                                 -->  
+<!--                        <a href="tel:+55 16 991 708 414" class="phone-number">  -->  
+<!--                            <i class="fas fa-phone"></i>                        -->  
+<!--                            <span>+55 16 991 708 414</span>                     -->  
+<!--                        </a>                                                    -->  
+<!--                    </div>>                                                     -->  
                 </div>
+                
             </div>
         </nav>
     </header>

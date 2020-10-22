@@ -40,6 +40,25 @@ header, #top-bar {
     padding: 10px;
     color: #f7f7f7;
 }
+/*
+#language-box img {
+    size: 14px;
+}*/
+
+.language img {
+    width: 25px; 
+    height: auto;
+    border: 0px solid #393e46;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.language img:hover {
+    width: 25px; 
+    height: auto;
+    border: 1px solid #f7f7f7;
+    border-radius: 50%;
+}
 
 #phone-number-box i {
     color: #f7f7f7;
