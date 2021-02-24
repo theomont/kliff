@@ -1,0 +1,32 @@
+{% extends 'lp_base.html' %}
+{% load static %}
+
+
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block title %}Thank You!{% endblock %}
+
+{% block description %}We'll be in touch soon.{% endblock %}
+
+{% block language %}
+<div id="phone-number-box">                                 
+    <a href="tel:+55 16 991 708 414" class="phone-number">   
+        <i class="fas fa-phone"></i>                         
+        <span>+55 16 991 708 414</span>                      
+    </a>                                                     
+</div> 
+{% endblock %}
+
+{% block content %}
+<div id="thankyou-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="main-headline" id="thanks">Cheers!</h1>
+                <p>We'll be in touch soon.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block copyright %}Developed by{% endblock %}

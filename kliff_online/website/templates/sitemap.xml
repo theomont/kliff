@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+	<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com and adapted by kliff digital-->
+	<url>
+	  <loc>https://kliff.com.br/</loc>
+	  <xhtml:link 
+				   rel="alternate"
+				   hreflang="pt"
+				   href="https://kliff.com.br/pt/"/>
+	  <xhtml:link 
+				   rel="alternate"
+				   hreflang="en"
+				   href="https://kliff.com.br/en/"/>
+	  <lastmod>2020-11-05T18:20:33+00:00</lastmod>
+	  <priority>1.00</priority>
+	</url>
+	<url>
+	  <loc>https://kliff.com.br/en/</loc>
+	  <xhtml:link 
+				   rel="alternate"
+				   hreflang="en"
+				   href="https://kliff.com.br/en/"/>
+	  <xhtml:link 
+				   rel="alternate"
+				   hreflang="pt"
+				   href="https://kliff.com.br/pt/"/>
+	  <lastmod>2020-11-05T18:20:33+00:00</lastmod>
+	  <priority>0.80</priority>
+	</url>
+	<url>
+	  <loc>https://kliff.com.br/pt/</loc>
+	  <xhtml:link 
+				   rel="alternate"
+				   hreflang="pt"
+				   href="https://kliff.com.br/pt/"/>
+	  <xhtml:link 
+				   rel="alternate"
+				   hreflang="en"
+				   href="https://kliff.com.br/en/"/>
+	  <lastmod>2020-11-05T18:20:33+00:00</lastmod>
+	  <priority>0.64</priority>
+	</url>
+</urlset>

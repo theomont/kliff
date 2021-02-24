@@ -1,0 +1,132 @@
+{% extends 'lp_base.html' %}
+{% load static %}
+
+{% block robots %}index,follow{% endblock %}
+
+{% block title %}Kliff - Your Business Online{% endblock %}
+
+{% block description %}Consulting and digital medias management. Everything your company needs to be online.{% endblock %}
+
+{% block language %}
+<div id="language-box">
+    <a href="/pt" class="language">
+        <img src={% static 'img/pt_icon.png' %} alt="Português">
+    </a>
+</div>
+{% endblock %}
+
+{% block content %}
+    <!-- Masthead Area -->
+    <div id="masthead-area">
+        <!-- Background Image by Simon Steinberger from Pixabay -->
+        <!-- Image by <a href="https://pixabay.com/users/simon-3/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4033636">Simon Steinberger</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4033636">Pixabay</a>-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="masthead-box">
+                        <div id="title-box">
+                            <h1 class="main-headline">Your Business Online</h1>
+                        </div>
+                        <div id="description-box">
+                            <p><a href="#" class="kliff">_Kliff</a> is a company focused on developing businesses in the digital environment.</p>
+                            <p>We offer services from website development to marketing campaign management. We will go through every step of the way to place your business in a successful position.</p>
+                            <p>Get a 30 minutes free consultation. Contact us now for an opportunity to let us impress you and show what we can do for your business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="masthead-box">
+                        <!-- <div id="free-consulting">         -->
+                        <!--    <h2>Consulte-nos grátis!</h2>   -->
+                        <!-- </div>                             -->
+                        <div id="form-box">
+                            <form method="POST" id="lead-form">
+                                {% csrf_token %}
+                                <input type="text" class="form-control" placeholder="Name" name="name" required> <!-- must be the same name defined in the view || set as required -->
+                                <input type="email" class="form-control" placeholder="Email" name="email" required> <!-- must be the same name defined in the view || set as required -->
+                                <input type="submit" class="main-btn" id="send-btn" value="Send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- Serviços da empresa >> -->
+ <div id="service-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="main-headline">What we offer</h2>
+            </div>
+            <div class="col-md-4 service-box">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Website development</h3>
+                <p>Landing Page and Website development built with Django and Bootstrap framework. Cutting-edge technology to grant full control over your website. 
+                    Thinking to meet all clients' needs we can develop websites using Wordpress or Wix as well.
+                </p>
+            </div>
+            <div class="col-md-4 service-box">
+                <i class="fab fa-google"></i>
+                <h3>Google Ads</h3>
+                <p>Build and manage Google Ads campaign on Google Search, Google Display, Google Shopping and YouTube always aiming what really matters: performance.</p>
+            </div>
+            <div class="col-md-4 service-box">
+                <i class="far fa-lightbulb"></i>
+                <h3>Consulting</h3>
+                <p>Discover what are the strengths and weaknesses in your business as well what are the next steps. Our assessment might include process, audience, SEO, SEM, UX and data management analysis.</p>
+            </div>		
+            <div class="col-md-4 service-box">
+                <i class="fas fa-chart-line"></i>
+                <h3>Focus on Performance</h3>
+                <p>Believe: you don’t want more access to your website. You are looking for profit! Our methodology will focus on that. Delivery what your company does better to the right people.                    
+                </p>
+            </div>
+            <div class="col-md-4 service-box">
+                <i class="fab fa-bitcoin"></i>
+                <h3>Pay with Bitcoins</h3>
+                <p>We accept bitcoins and we can help you to understand this future currency and to adapt your business to receive payments on that too.</p>
+            </div>
+            <div class="col-md-4 service-box">
+                <i class="far fa-handshake"></i>
+                <h3>Relationship</h3>
+                <p>Cooperation between people is the key to success. And as happier and freer people are more they will cooperate. 
+                    So, forget those trick and lock-in contracts, with us, must to be always a win-win relationship.
+                </p>
+            </div>
+        </div>
+    </div>
+</div> <!-- << Serviços da empresa -->
+
+<div id="contact-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="main-headline">Reach us</h2>
+            </div>
+            <div class="col-md-6 contact-box">
+                <a href="tel:+55 16 991 708 414" class="phone-number"><i class="fas fa-phone"></i></a>
+                <p><span class="contact-title">Call to:</span> <a href="tel:+55 16 991 708 414" class="phone-number">+55 16 991 708 414</a></p>
+            </div>
+            <div class="col-md-6 contact-box">
+                <a href="mailto:contato@kliff.com.br" class="email-address"><i class="fas fa-envelope"></i></a>
+                <p><span class="contact-title">Send an email:</span><a href="mailto:contato@kliff.com.br" class="email-address">contact@kliff.com.br</a></p>
+            </div>
+            <div class="col-md-12" id="msg-box">
+                <p>Or let us know your email address and we’ll reach you soon</p>
+                <div id="bottom-form-box">    
+                    <form method="POST" id="bottom-lead-form">
+                        {% csrf_token %}
+                        <input type="text" class="form-control" placeholder="Name" name="name" required>
+                        <input type="email" class="form-control" placeholder="Email" name="email" required>
+                        <input type="submit" class="btn btn-success main-btn" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block copyright %}Developed by{% endblock %}

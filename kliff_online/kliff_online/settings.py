@@ -25,9 +25,11 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = '=#yz=u^q#eps^i2h61pf01@v37q-^rd5z6zr4b0tys8pa1if_u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
+        "192.168.0.6"
+        "192.168.0.6:80"
         "0.0.0.0:8000",
         "kliff.com.br",
         "kliff.com.br:8000",

@@ -1,0 +1,871 @@
+/* General */
+body {
+    font-family: 'Roboto', 'Consolas', 'Lucida Console', sans-serif; /* sans-serif is a backup in case there is no Roboto*/
+}
+
+.row {
+    margin: 0;
+}
+
+.container {
+    padding: 70px 0px;
+}
+
+p, li {
+    color: #5c636e;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Top Bar */
+header, #top-bar {
+    background-color: #393e46;
+    color: #f7f7f7;
+    padding: 0 1%;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo {
+    width: 105px; 
+}
+
+.navbar-brand {
+    padding: 10px;
+    color: #f7f7f7;
+}
+/*
+#language-box img {
+    size: 14px;
+}*/
+
+.language img {
+    width: 25px; 
+    height: auto;
+    border: 0px solid #393e46;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.language img:hover {
+    width: 25px; 
+    height: auto;
+    border: 1px solid #f7f7f7;
+    border-radius: 50%;
+}
+
+#phone-number-box i {
+    color: #f7f7f7;
+    font-size: 14px;
+    margin: 5px;
+    padding: 0;
+}
+
+#phone-number-box .phone-number span {
+    color: #f7f7f7;
+    font-weight: lighter;
+    transition: .5s;
+
+}
+
+#phone-number-box .phone-number span:hover {
+    color: #f8b500;
+
+}
+
+.phone-number {
+    color: #f7f7f7;
+    font-weight: lighter;
+    transition: .5s;
+
+}
+
+.phone-number:hover {
+    color: #f8b500;
+}
+
+.email-address {
+    color: #f7f7f7;
+    font-weight: lighter;
+    transition: .5s;
+    margin-left: 5px;
+
+}
+
+.email-address:hover {
+    color: #f8b500;
+}
+
+/* masthead area */
+#masthead-area {
+    background: url(../img/cliff_03.jpg) no-repeat center center;
+    position: relative;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: 70vh;
+    color: #f7f7f7;
+}
+
+#masthead-area .col-md-6 {
+    padding: auto;
+    margin: auto;
+}
+
+.masthead-box {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+.masthead-box p {
+    color: #f7f7f7;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.main-headline {
+    color: #f7f7f7;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-headline::after {
+    content: "";
+    border-top: 2px solid #f8b500;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+.masthead-box .main-headline {
+    margin: 0 0 55px 0;
+}
+
+.kliff {
+    font-family: "Lucida Console";
+    color: #f8b500;
+}
+
+.kliff:hover {
+    color: #f8b500;
+    font-weight: 600;
+}
+
+.main-headline::after {
+    content: "";
+    border-top: 2px solid #f8b500;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+#form-box {
+    margin-top: 20%;
+}
+
+#lead-form input[type="text"], #lead-form input[type="email"] {
+    margin-bottom: 15px;
+    border-radius: 0;
+    border-color: #393e46;
+}
+
+#lead-form input[type="text"]:hover, #lead-form input[type="email"]:hover {
+    border-color: #f8b500;
+}
+
+#lead-form input[type="text"]:focus, #lead-form input[type="email"]:focus {
+    border-color: #f8b500;
+    box-shadow: 0 0 5px #f8b500;
+}
+
+.main-btn {
+    background-color: #f8b500;
+    color: #393e46;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px; /* half of the height */
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+#send-btn {
+    padding: 0;
+    width: 200px;
+    height: 40px;
+    float: right;
+}
+
+.main-btn:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #f7f7f7;
+    border-color: #f8b500;
+}
+
+.about-title {
+    font-size: 17px;
+    color: #393e46;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Serviços */
+#service-area .main-headline {
+    color: #393e46;
+}
+
+#service-area {
+    background-color: #f7f7f7;
+}
+
+.service-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box i, .service-box h3 {
+    transition: .5s;
+}
+
+.service-box i {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #393e46;
+}
+
+.service-box h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.service-box:hover > i, .service-box:hover > h3 {
+    color: #f8b500;
+}
+
+/* footer */
+
+#contact-area {
+    text-align: center;
+    background-color: #5c636e;
+}
+
+#contact-area .main-headline {
+    color: #f7f7f7; 
+}
+
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #f8b500;
+}
+
+.contact-box i {
+    color: #f7f7f7;
+    border: solid 1px #f7f7f7;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 16px;
+    color: #f7f7f7;
+}
+
+.contact-title {
+    font-weight: bold;
+    color: #f8b500;
+}
+
+#msg-box p {
+    color: #f7f7f7;
+    font-size: 22px;
+}
+
+#bottom-form-box input[type="text"], #bottom-form-box input[type="email"], #bottom-form-box textarea {
+    margin-bottom: 15px;
+    border-radius: 0;
+}
+
+#bottom-form-box input[type="text"]:hover, #bottom-form-box input[type="email"]:hover {
+    border-color: #f8b500;
+}
+
+#bottom-form-box input[type="text"]:focus, #bottom-form-box input[type="email"]:focus {
+    border-color: #393e46;
+    box-shadow: 0 0 5px #f8b500;
+}
+
+#bottom-form-box .main-btn {
+    width: 120px;
+    height: 50px;
+}
+
+/* Copy */
+
+#copy-area {
+    background-color: #393e46;
+}
+
+#copy-area .container {
+    padding: 10px 0;
+    text-align: center;
+}
+
+#copy-area .container p {
+    margin-bottom: 0;
+    color: #f7f7f7;
+    font-weight: lighter;
+}
+
+#copy-area .container a {
+    font-weight: bold;
+    color: #f7f7f7
+}
+
+#copy-area .container a:hover {
+    text-decoration: none;
+    color: #f8b500;
+}
+
+/* Thank You Page */
+#thankyou-page .container {
+    margin-top: 30px;
+}
+
+#thankyou-page p {
+    text-align: center;
+    font-size: 25px;
+}
+
+#thankyou-page h1 {
+    color: #393e46;
+}
+
+/***************** Responsive *****************/
+@media (max-width: 1400px), (max-height: 900px) {
+    .container {
+        padding-top: 1.5rem;
+    }
+
+    /* Masterhead Area */
+
+    #masthead-area {
+        padding-top: auto;
+        height: 70vh;
+    }
+
+    #masthead-area .col-md-6 {
+        padding-top: 0;
+    }
+
+    #title-box h1 {
+        margin-bottom: 30px;
+    }
+
+    #description-box div {
+        margin: 0;
+        padding: 0;
+    }
+
+    #masthead-area p {
+        font-size: 18px;
+    }
+
+    .masthead-box {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main-headline {
+        color: #f7f7f7;
+        margin: 0 0 40px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .main-headline::after {
+        content: "";
+        border-top: 2px solid #f8b500;
+        width: 15%;
+        position: absolute;
+        top: 50px;
+        left: 42.5%;
+    }
+
+    #form-box {
+        margin-top: 1rem;
+    }
+
+    /* Thank You Page */
+    #thankyou-page .container {
+        margin-top: 40px;
+    }
+
+    #thankyou-page h1 {
+        font-size: 28px;
+    }
+
+    #thankyou-page p {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    
+}
+
+/* horizontal tablets */
+@media(max-height: 700px) {
+    #masthead-area {
+        padding-top: 70px;
+        height: 500px;
+    }
+}
+
+/* iphone 7 A1778 - horizantal (667px) */
+@media(max-width: 830px) {
+    .container {
+        padding-top: 1rem;
+    }
+
+    /* Masterhead Area */
+
+    #masthead-area {
+        padding-top: 70px;
+        height: 700px;
+    }
+
+    #masthead-area .col-md-6 {
+        padding-top: 0;
+    }
+
+    #title-box h1 {
+        margin-bottom: 30px;
+    }
+
+    #description-box div {
+        margin: 0;
+        padding: 0;
+    }
+
+    #masthead-area p {
+        font-size: 16px;
+    }
+
+    .masthead-box {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main-headline {
+        color: #f7f7f7;
+        margin: 0 0 40px 0;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .main-headline::after {
+        content: "";
+        border-top: 2px solid #f8b500;
+        width: 15%;
+        position: absolute;
+        top: 40px;
+        left: 42.5%;
+    }
+
+    #form-box {
+        margin-top: 1rem;
+    }
+
+    /* Services Area */
+
+    #service-area .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #service-area i {
+        font-size: 24px;
+    }
+
+    #service-area h3 {
+        font-size: 18px;
+    }
+
+    /*#service-area p {
+        display: none;
+    }*/
+
+    #service-area .container, #service-area  .row {
+        padding-bottom: 0;
+    }
+
+    /* Contact Area */
+    #contact-area .col-md-6 {
+        width: 50%;
+    }
+
+    #contact-area i {
+        font-size: 24px;
+    }
+
+    #contact-area i {
+        font-size: 24px;
+    }
+
+    #contact-area i:active {
+        color: #f8b500;
+        border-color: #f8b500;
+    }
+
+    #contact-area span {
+        display: none;
+    }
+
+    #contact-area p {
+        font-size: 16px;
+    }
+
+    #working_time {
+        display: none;
+    }
+
+    .contact-box {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        border-bottom: 0px solid #f8b500;
+    }
+
+    #msg-box p {
+        font-size: 14px;
+    }
+
+    #contact-area .container, #contact-area  .row {
+        padding-bottom: 10px;
+    }
+
+}
+
+/* iphone 7 A1778 (375px) */
+@media(max-width: 375px) {
+    .container {
+        padding-top: 1rem;
+    }
+
+    /* Masterhead Area */
+
+    #masthead-area {
+        padding-top: 70px;
+        height: 700px;
+    }
+
+    #masthead-area .col-md-6 {
+        padding-top: 0;
+    }
+
+    #title-box h1 {
+        margin-bottom: 30px;
+    }
+
+    #description-box div {
+        margin: 0;
+        padding: 0;
+    }
+
+    #masthead-area p {
+        font-size: 16px;
+    }
+
+    .masthead-box {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .main-headline {
+        color: #f7f7f7;
+        margin: 0 0 40px 0;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .main-headline::after {
+        content: "";
+        border-top: 2px solid #f8b500;
+        width: 15%;
+        position: absolute;
+        top: 40px;
+        left: 42.5%;
+    }
+
+    #form-box {
+        margin-top: 1rem;
+    }
+
+    /* Services Area */
+
+    #service-area .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #service-area i {
+        font-size: 24px;
+    }
+
+    #service-area h3 {
+        font-size: 18px;
+    }
+
+    /*#service-area p {
+        display: none;
+    }*/
+
+    #service-area .container, #service-area  .row {
+        padding-bottom: 0;
+    }
+
+    /* Contact Area */
+    #contact-area .col-md-6 {
+        width: 50%;
+    }
+
+    #contact-area i {
+        font-size: 24px;
+    }
+
+    #contact-area i {
+        font-size: 24px;
+    }
+
+    #contact-area i:active {
+        color: #f8b500;
+        border-color: #f8b500;
+    }
+
+    #contact-area span {
+        display: none;
+    }
+
+    #contact-area p {
+        font-size: 16px;
+    }
+
+    #working_time {
+        display: none;
+    }
+
+    .contact-box {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        border-bottom: 0px solid #f8b500;
+    }
+
+    #msg-box p {
+        font-size: 14px;
+    }
+
+    #contact-area .container, #contact-area  .row {
+        padding-bottom: 10px;
+    }
+
+}
+
+/* 352px */
+/* iphone 5 and Galaxy Fold */
+@media(max-width: 352px) {
+    .container, .row, .col-md-6 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .container {
+        padding-top: 20px;
+    }
+
+    #phone-number-box span {
+        display: none;
+    }
+
+    #masthead-area {
+        padding-top: 70px;
+        height: 800px;
+    }
+
+    .main-headline {
+        color: #f7f7f7;
+        margin: 0 0 40px 0;
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .masthead-box {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0;
+    }
+
+    #phone-number-box span {
+        display: none;
+    }
+
+    #service-area h3 {
+        font-size: 14px;
+    }
+
+    #contact-area .col-md-6 {
+        width: 100%;
+    }
+
+    #contact-area i {
+        margin-bottom: 10px;
+    }
+
+    #contact-area .phone-number {
+        font-size: 12px;
+    }
+
+    #contact-area .email-address {
+        font-size: 13px;
+    }
+
+    #contact-area p {
+        font-size: 10px;
+    }
+
+
+
+}
+
+
+
+
+
+
+/*************************************************** 
+=======     STATUS      =======
+General:
+2560×1440	25,954(5.73%)  - ok *
+1920×1080	88,378(19.53%) - ok *
+1920x969                   - ok
+1680×1050	20,068(4.43%)  - ok
+1600×900	10,193(2.25%)  - ok
+1536×864	32,872(7.26%)  - ok
+1440×900	43,687(9.65%)  - ok
+1366x1024                  - ok *
+1366×768	67,912(15.01%) - ok
+1280×800	14,007(3.09%)  - ok
+1280×720	15,138(3.34%)  - ok
+1024×1366                  - ok *
+1024x768                   - ok 
+1024x600                   - ok
+962x601                    - ok
+896x414                    - NOT <
+800×1280                   - ok
+768×1024                   - ok *
+780x360                    - ok <
+760x360                    - ok <
+736x414                    - ok <
+667x375                    - ok * <
+601×962                    - ok *
+600×1024                   - ok 
+568x320     iPhone5(flip)  - ok <
+414×896                    - ok
+414×736                    - ok
+375×667                    - ok <
+360×780                    - ok
+360×760                    - ok
+360×640                    - ok <
+320x568     iPhone5        - ok <
+280x653     GalaxyFold     - ok <
+
+*(need small adjustes on masterhead)
+
+----------------------------------------------------
+        Most Common Viewports (worldwide)
+from: https://www.hobo-web.co.uk/best-screen-size/
+----------------------------------------------------
+General:
+1	1920×1080	88,378(19.53%)
+2	1366×768	67,912(15.01%) 
+3	1440×900	43,687(9.65%)  
+4	1536×864	32,872(7.26%) 
+5	2560×1440	25,954(5.73%) 
+6	1680×1050	20,068(4.43%)  
+7	1280×720	15,138(3.34%)  
+8	1280×800	14,007(3.09%)  
+9	360×640	    11,085(2.45%)  
+10	1600×900	10,193(2.25%)  
+
+My Laptop Viwport Size
+1920x969                       
+
+Mobile
+375×667 – 7.61%     
+414×896 – 6.52%     
+360×780 – 5.56%     
+360×760 – 5.06%     
+414×736 – 3.74%     
+768×1024 – 51.98%    
+320x568 - iPhone5 
+
+Tablet
+800×1280 – 5.34%    
+601×962 – 4.47%     
+600×1024 – 2.85%    
+1024×1366 – 1.96%   
+
+Mobile (flipping)
+375×667 – 7.61%     
+414×896 – 6.52%     
+360×780 – 5.56%    
+360×760 – 5.06%     
+414×736 – 3.74%     
+768×1024 – 51.98%   
+320x568 - iPhone5
+
+Tablet (flipping)
+800×1280 – 5.34%    
+601×962 – 4.47%     
+600×1024 – 2.85%    
+1024×1366 – 1.96%   
+------------------------------------------------------
+-- old --
+2560×1440	25,954(5.73%)       - ok (need small adjustes on masterhead)
+1920×1080	                    - ok (need small adjustes on masterhead)
+1920x969                        - ok
+1680×1050	20,068(4.43%)       - ok
+1600×900	10,193(2.25%)       - ok
+1536×864	32,872(7.26%)       - ok
+1440×900	                    - ok
+1366×768	                    - NOT
+1280×800	14,007(3.09%)       - NOT
+1280×720	15,138(3.34%)       - NOT
+
+1024×1366 – 1.96%   - NOT
+800×1280 – 5.34%    - NOT
+768×1024 – 51.98%   - NOT
+601×962 – 4.47%     - ok
+600×1024 – 2.85%    - ok
+
+414×896 – 6.52%                 - ok
+414×736 – 3.74%                 - ok
+375×667 – 7.61%                 - ok
+360×780 – 5.56%                 - ok
+360×760 – 5.06%                 - ok
+360×640	    11,085(2.45%)       - ok
+
+***************************************************/
