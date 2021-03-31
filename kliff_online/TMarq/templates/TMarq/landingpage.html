@@ -1,0 +1,116 @@
+{% extends 'tmarq_base.html' %}
+{% load static %}
+
+{% block robots %}index,follow{% endblock %}
+
+{% block title %}Tércio Monteiro Arquiteto{% endblock %}
+
+{% block description %}Projeto arquitetonico, gestao de obra e implementacao 3D{% endblock %}
+
+<!--{% block language %}-->
+<!--<div id="language-box">-->
+<!--    <a href="/en" class="language">-->
+<!--        <img src={% static 'img/en_icon.png' %} alt="English">-->
+<!--    </a>-->
+<!--</div>-->
+<!--{% endblock %}-->
+
+{% block content %}
+    <!-- Masthead Area -->
+    <div id="masthead-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="masthead-box">
+                      <!--   <div id="title-box"> -->
+                       <!--      <h1 class="main-headline">Tercio Monteiro Arquitetura</h1>-->
+                       <!--  </div>-->
+                      <!--   <div id="description-box">-->
+                      <!--   -->
+                       <!--  </div>-->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="masthead-box">
+                        <!-- <div id="free-consulting">         -->
+                        <!--    <h2>Consulte-nos grátis!</h2>   -->
+                        <!-- </div>                             -->
+                        <div id="form-box">
+                           <!--  <form method="POST" id="lead-form">-->
+                            <!--     {% csrf_token %}-->
+                           <!--      <input type="text" class="form-control" placeholder="Nome" name="name" required> <!-- must be the same name defined in the view || set as required -->
+                            <!--     <input type="email" class="form-control" placeholder="E-mail" name="email" required> <!-- must be the same name defined in the view || set as required -->
+                            <!--     <input type="submit" class="main-btn" id="send-btn" value="Enviar">-->
+                           <!--  </form>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <!-- Serviços da empresa >> -->
+ <div id="service-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="main-headline">O que oferecemos</h2>
+            </div>
+            <div class="col-md-4 service-box">
+                <i class="fas fa-drafting-compass"></i>
+                <h3>Projeto Arquitetonico</h3>
+                <p>O projeto do seu sonho.
+                </p>
+            </div>
+            <div class="col-md-4 service-box">
+                <i class="fas fa-laptop-house"></i>
+                <h3>Projeto 3D</h3>
+                <p>Visualize seu sonho.               
+                </p>
+            </div>
+            <div class="col-md-4 service-box">
+                <i class="fas fa-hard-hat"></i>
+                <h3>Gestão de Obra</h3>
+                <p>Consntruindo seu sonho.</p>
+            </div>
+        </div>
+    </div>
+</div> <!-- << Serviços da empresa -->
+
+<div id="contact-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="main-headline">Entre em contato conosco</h2>
+            </div>
+            <div class="col-md-4 contact-box">
+                <a href="tel:+55 15 996 334 848" class="phone-number"><i class="fas fa-phone"></i></a>
+                <p><span class="contact-title">Ligue para:</span> <a href="tel:+55 15 996 334 848" class="phone-number">(15) 9 9633-4848</a></p>
+            </div>
+            <div class="col-md-4 contact-box">
+                <a href="https://www.instagram.com/arquitercio/" class="email-address"><i class="fab fa-instagram"></i></a>
+                <p><span class="contact-title">Acesse o Instagram:</span><a href="https://www.instagram.com/arquitercio/" class="email-address">@arquitercio</a></p>
+            </div>
+            <div class="col-md-4 contact-box">
+                <a href="mailto:contato@terciomonteiro.com.br" class="email-address"><i class="fas fa-envelope"></i></a>
+                <p><span class="contact-title">Envie um e-mail:</span><a href="mailto:contato@terciomonteiro.com.br" class="email-address">contato@kliff.com.br</a></p>
+            </div>
+            <div class="col-md-12" id="msg-box">
+             <!--   <p>Ou nos deixe seu e-mail que entraremos em contato:</p>-->
+             <!--   <div id="bottom-form-box">    -->
+             <!--       <form method="POST" id="bottom-lead-form">-->
+             <!--           {% csrf_token %}-->
+             <!--           <input type="text" class="form-control" placeholder="Nome" name="name" required>-->
+             <!--           <input type="email" class="form-control" placeholder="E-mail" name="email" required>-->
+             <!--           <input type="submit" class="btn btn-success main-btn" value="Enviar">-->
+             <!--       </form>-->
+            <!--    </div> -->
+                <img id="logo_bottom" src={% static 'img\T-1-Dourado.png' %} alt="Tércio Monteiro Arquitetura">
+           </div>
+            
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block copyright %}Desenvolvido por{% endblock %}

@@ -1,0 +1,32 @@
+Tussock
+#C4994E
+
+Golden Sand
+#EED177
+
+Tacha
+#D9B663
+
+Equator
+#E4C36C
+
+==
+escuro
+claro
+==
+opcao 1
+#202C39
+#283845
+
+==
+opcao 2
+#0D1F2D
+#546A7B
+
+#f7f7f7 = > #f7f7f7 [white]
+#393e46 => #0D1F2D [Black]
+#5c636e => #546A7B [Grey - Eletric Blue]
+#f8b500 => #D9B663 [YELLOW - GOLD]
+
+
+==============

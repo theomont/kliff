@@ -1,0 +1,31 @@
+{% extends 'tmarq_base.html' %}
+{% load static %}
+
+{% block robots %}noindex,nofollow{% endblock %}
+
+{% block title %}Obrigado!{% endblock %}
+
+{% block description %}A Kilff agradece seu contato.{% endblock %}
+
+{% block language %}
+<div id="phone-number-box">                                 
+    <a href="tel:+55 16 991 708 414" class="phone-number">   
+        <i class="fas fa-phone"></i>                         
+        <span>+55 16 991 708 414</span>                      
+    </a>                                                     
+</div> 
+{% endblock %}
+
+{% block content %}
+<div id="thankyou-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="main-headline" id="thanks">Obrigado!</h1>
+                <p>Em breve entraremos em contato.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block copyright %}Desenvolvido por{% endblock %}
